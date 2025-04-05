@@ -1,1 +1,29 @@
+# Literature Review - Week 1 (March 29 - April 4, 2025)
 
+## Initial Search Results
+Searched arXiv, Google Scholar, Springer for papers on financial CNNs, multi-modal prediction, text analytics in finance. Found 15 relevant papers (2020-2025):
+
+1. Sezer & Ozbayoglu (2020) - Converted price series to images (GAF, MTF), used CNNs for trading.
+2. Hoseinzade & Haratizadeh (2019) - Used candlestick charts for CNN stock prediction.
+3. Mohan et al. (2019) - Combined news sentiment with prices, no images.
+4. Chen et al. (2018) - Fused prices and news, used LSTM.
+5. Sirignano & Cont (2019) - CNNs on order book heatmaps.
+6. Cao & Wang (2019) - CNNs for price forecasting.
+7. Chatzis et al. (2018) - CNNs for crisis prediction.
+8. Peng & Yan (2021) - Deep learning for credit risk.
+9. Zhang et al. (2023) - Reviewed deep learning in finance.
+10. Li et al. (2022) - Text analytics in finance survey.
+11. Kim & Lee (2020) - Twitter sentiment for stock prediction.
+12. Wang et al. (2021) - Multi-modal forecasting, no images.
+13. Barra et al. (2020) - Volatility forecasting with RNNs.
+14. Jiang (2021) - Deep learning in stock prediction review.
+15. Xu et al. (2024) - Visualizing time-series for CNNs.
+
+## Must-Reads for Week 2
+- Sezer & Ozbayoglu (2020)
+- Hoseinzade & Haratizadeh (2019)
+- Mohan et al. (2019)
+- Zhang et al. (2023)
+- Xu et al. (2024)
+- Li et al. (2022)
+- Barra et al. (2020)
