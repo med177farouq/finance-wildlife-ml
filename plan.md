@@ -61,3 +61,16 @@ Post-April, here’s a high-level plan to finish by August:
 - **Images**: Stacked layers (candlestick + sentiment + news heatmap) for 5-day windows.
 - **Target**: Price direction (Up/Down) + Spike type (Temporary/Permanent).
 - **Goals**: Practical tool for Tesla prediction; academic paper on multi-modal image fusion.
+
+# Week 2 Plan (Adjusted for Your Schedule)
+
+    Goal: Deep dive into the 7 must-read papers, draft the lit review.
+    Tasks:
+        April 6 (Sunday): I’ll post paper summaries by 2 PM GMT+1. You review anytime after.
+        April 7 (Monday): You skim the summaries, note any questions. We can chat at 2 PM GMT+1 if you’re ready.
+        April 8-10 (Tuesday-Thursday): You’re in classes 10 AM - 5 PM, so we’ll connect at 6 PM GMT+1 each day:
+            April 8: I’ll provide a lit review structure (intro, methods, gaps). You start drafting in lit_review.md.
+            April 9: Continue drafting—we’ll discuss progress.
+            April 10: Finish rough draft (~1,500 words).
+        April 11 (Friday): Review and refine at 2 PM GMT+1.
+    Output: Rough draft of lit review (~1,500 words)
