@@ -54,3 +54,10 @@ Post-April, here’s a high-level plan to finish by August:
     June: Code CNN in Azure ML, train on small dataset.
     July: Test, tweak (e.g., add data types), simulate trading profits.
     August: Deploy model, draft paper, finalize results.
+# Project Scope - April 5, 2025
+- **Concept**: Frame Tesla signals as "wildlife behaviors" (roaring = 2%-3% spikes, purring = stability, hissing = volatility).
+- **Data**: Tesla prices (Yahoo Finance), X sentiment, news (NewsAPI) for April 2024 - March 2025.
+- **Split**: Technical (prices), Qualitative (news), Behavioral (X sentiment).
+- **Images**: Stacked layers (candlestick + sentiment + news heatmap) for 5-day windows.
+- **Target**: Price direction (Up/Down) + Spike type (Temporary/Permanent).
+- **Goals**: Practical tool for Tesla prediction; academic paper on multi-modal image fusion.
