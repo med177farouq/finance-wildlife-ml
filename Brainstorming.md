@@ -32,7 +32,7 @@ Let’s start with a focused brainstorming session to explore your concept more 
     Practical: A tool traders could use—fast, accurate, deployable.
     Academic: A new method—publishable in a journal like Neural Networks or a conference like NeurIPS.
     Balance: Start with a practical prototype (e.g., Tesla stock prediction), then generalize for academia.
-   -----------------------------------------------------------------------------------
+  
 
 # Brainstorming - March 29, 2025
 - **Core Concept**: Frame financial signals as "wildlife behaviors":
