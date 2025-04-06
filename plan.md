@@ -74,3 +74,10 @@ Post-April, here’s a high-level plan to finish by August:
             April 10: Finish rough draft (~1,500 words).
         April 11 (Friday): Review and refine at 2 PM GMT+1.
     Output: Rough draft of lit review (~1,500 words)
+# Project Scope - April 6, 2025
+- **Concept**: Tesla signals as "wildlife behaviors" (roaring = 1%-3% spikes, purring = stability, hissing = volatility).
+- **Data**: Tesla prices, X sentiment, news (NewsAPI) for April 2024 - March 2025.
+- **Split**: Technical (prices), Qualitative (news: Insider vs. Outsider factors), Behavioral (X sentiment).
+- **Images**: Stacked layers (candlestick + sentiment + news heatmap, non-overlapping 5-day windows).
+- **Target**: Price direction (Up/Down → Buy/Sell) + Spike type (Temporary/Permanent).
+- **Goals**: Practical tool for Tesla prediction; academic paper on multi-modal image fusion.
