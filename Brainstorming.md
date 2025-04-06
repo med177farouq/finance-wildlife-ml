@@ -34,7 +34,7 @@ Let’s start with a focused brainstorming session to explore your concept more 
     Balance: Start with a practical prototype (e.g., Tesla stock prediction), then generalize for academia.
   
 
-# Brainstorming - March 29, 2025
+## Brainstorming - March 29, 2025
 - **Core Concept**: Frame financial signals as "wildlife behaviors":
   - Roaring: Sharp price spikes + high sentiment.
   - Purring: Stable prices + neutral news.
