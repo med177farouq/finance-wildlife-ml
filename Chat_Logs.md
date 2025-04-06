@@ -18,4 +18,9 @@ Clarified “post the paper” means sharing summaries in chat.
 Provided summaries of 7 must-read papers for lit review.
 Kept Week 2 plan: Review summaries (April 6-7), draft lit review (April 8-10), refine (April 11).
 Actions: Update GitHub with summaries, review summaries for next chat.
-
+## April 6, 2025 (Post-00:18 GMT+1)
+Reviewed your comments on paper summaries (@farouq).
+Integrated ideas: News split (Insider vs. Outsider), classification/detection/tracking aims, VIX for future.    Updated project scope: 1%-3% spikes, non-overlapping windows, focused on Up/Down + Spike Type.
+Provided GitHub updates for Brainstorming.md, lit_review.md, README.md.
+Kept Week 2 plan: Draft lit review (April 8-10), refine (April 11).
+Actions: Update GitHub, prepare for tomorrow’s chat.
