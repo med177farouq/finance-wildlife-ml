@@ -33,3 +33,13 @@ Let’s start with a focused brainstorming session to explore your concept more 
     Academic: A new method—publishable in a journal like Neural Networks or a conference like NeurIPS.
     Balance: Start with a practical prototype (e.g., Tesla stock prediction), then generalize for academia.
    
+## Brainstorming Updates - April 6, 2025
+- **Transition Intervals (from PDF)**: Focus on 1%-3% volatility movements as "spikes."
+- **Spike Types (from PDF)**: Temporary (reverts in 1-2 days) vs. Permanent (sustains ≥5 days).
+- **News Filtering (@farouq)**: Split news into Insider Factors (fundamental: earnings, production) vs. Outsider Factors (sentimental: shocks, economic factors).
+- **Classification, Detection, Tracking (@farouq)**:
+  - Classification: Up/Down (maps to Buy/Sell).
+  - Detection: 1%-3% volatility spikes.
+  - Tracking: Avoid double counting with non-overlapping 5-day windows.
+- **Volatility Indices (@farouq)**: Consider VIX/fear index for future iterations to contextualize spikes.
+   
