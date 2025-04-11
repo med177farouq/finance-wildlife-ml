@@ -83,4 +83,43 @@ Searched arXiv, Google Scholar, Springer for papers on financial CNNs, multi-mod
 - **Our Contribution**: We combine technical (prices), qualitative (news: Insider vs. Outsider), and behavioral (X sentiment) data into a single image for CNN prediction, targeting price direction (Up/Down → Buy/Sell) and spike type (Temporary/Permanent). Model is generalizable to any stock.
 
 ## 6. References
+
+# Literature Review - Finance Wildlife ML Project updated 8 Apri l2025
+
+## 1. Introduction (~300 words)
+- **Why This Matters**: Discuss the challenge of predicting financial signals (e.g., price movements, volatility spikes) in a noisy market.
+  - Finance is chaotic, like a "wildlife ecosystem" (tie to our concept).
+  - Traditional models (e.g., ARIMA, GARCH) struggle with non-linear patterns.
+- **Role of Deep Learning**: Highlight the rise of deep learning in finance (cite Zhang et al., 2023).
+  - CNNs are effective for structured data (prices) but underused for unstructured data (news, sentiment).
+- **Our Focus**: Introduce our approach—using CNNs and Markov Chains to predict stock price movements and spike types by converting multi-modal data into images (generalizable to any stock).
+
+## 2. Image-Based Methods in Financial Prediction (~400 words)
+- **Time-Series to Images**: Summarize how researchers have converted financial data to images for CNNs.
+  - Sezer & Ozbayoglu (2020): Used GAF and MTF to convert price series, achieved high accuracy for trading signals.
+  - Hoseinzade & Haratizadeh (2019): Used candlestick charts for CNN prediction, outperformed LSTMs.
+  - Xu et al. (2024): Explored GAF and recurrence plots for crypto price prediction.
+- **Gap**: These studies focus on price data only, ignoring sentiment or news.
+
+## 3. Multi-Modal Data in Financial ML (~400 words)
+- **Combining Data Types**: Discuss work on integrating prices with unstructured data (news, sentiment).
+  - Mohan et al. (2019): Combined news sentiment with prices using LSTMs, improved accuracy.
+  - Li et al. (2022): Reviewed text mining in finance, found news adds predictive power but integration is challenging.
+- **Gap**: These studies don’t use image-based methods or CNNs—they process data separately (e.g., LSTMs). We filter news into Insider vs. Outsider factors and address overlap with weighted scoring (@farouq).
+
+## 4. Volatility and Spike Prediction (~200 words)
+- **Volatility Focus**: Highlight work on volatility, relevant to our spike type target.
+  - Barra et al. (2020): Used RNNs to forecast volatility, captured non-linear patterns better than GARCH.
+- **Gap**: No image-based methods or multi-modal data. Traditional Markov Chain convergence methods (e.g., linear \( n \)-step transitions) may struggle with noisy financial data. We propose an exponential convergence framework to recover the transition matrix more effectively (@farouq).
+
+## 5. Research Gaps and Our Contribution (~200 words)
+- **Gaps**:
+  - Image-based methods lack multi-modal data (sentiment, news).
+  - Multi-modal studies don’t use images or CNNs.
+  - Volatility prediction misses spike type classification (temporary vs. permanent) and expected return times.
+  - No focus on data integrity (e.g., avoiding double counting, @farouq) or efficient convergence in noisy systems.
+- **Our Contribution**: We combine technical (prices), qualitative (news: Insider vs. Outsider), and behavioral (X sentiment) data into a single image for CNN prediction, followed by a Markov Chain to model state transitions with exponential convergence. We target price direction (Up/Down → Buy/Sell), spike type (Temporary/Permanent), and expected return times. Model is generalizable to any stock.
+
+## 6. References
+- List the 7 papers in proper citation format (I’ll help with this on April 10).
 - List the 7 papers in proper citation format (I’ll help with this on April 9).
