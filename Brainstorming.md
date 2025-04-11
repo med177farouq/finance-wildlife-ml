@@ -13,6 +13,15 @@ Let’s start with a focused brainstorming session to explore your concept more 
     Wildcards: Insider trades, weather data (for commodity stocks), or even audio from CEO speeches (like .wav files!).
     Mixing It: How do we combine these visually? Stack them (e.g., RGB channels)? Overlay them? Create a “financial spectrogram”?
 
+## Brainstorming Updates - April 11, 2025 (Final Vision)
+- **Agreed Vision (@farouq)**:
+  - Symbolic Prototype Image: 512×512 grid of 2×2 blocks, abstract and machine-readable.
+  - Full Layout Structure: 3 layers (fundamentals = bottom, active market = middle, rare forces = top).
+  - Workflow: Slice image → Embed patches → Predict direction (Buy/Sell/Hold) & behavior (Bounce/Stabilize/Continue) with CNN (ViT as a future option).
+  - Project Goal: Model learns Buy/Sell/Hold, next 5-day path, optional risk level from a single Mega-Image.
+  - Image Logic: Entire image = multi-modal data; each 2×2 block = one signal; sliced into patches → embeddings → CNN/ViT.
+  - Amendments: Dynamic volatility thresholds, interpretable feature maps, sentiment decay, news clustering.
+
 ## Brainstorming Updates - April 11, 2025 (Clarified Modeling Approach)
 - **Mega-Image Creation (@farouq)**:
   - Integrates all sources (price, news, sentiment, fundamentals, macro) into a 512×512 grid of 2×2 blocks.
