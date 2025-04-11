@@ -76,3 +76,7 @@ Let’s start with a focused brainstorming session to explore your concept more 
   - 3. Signals translated into states or state probabilities.
   - 4. Markov Chain models the transition dynamics.
   - 5. Used for: Predictive modeling, risk assessment, simulation/backtesting.
+    6. ## Brainstorming Updates - April 8, 2025 (Continued)
+- **Exponential Convergence Validation (@farouq)**:
+  - Tested exponential \( n \) (e.g., \( n = \exp(9) \approx 8103 \)) in a weather Markov Chain example (Cloudy, Rainy, Sunny), analogous to our states (Roaring, Purring, Hissing).
+  - Exponential \( n \) achieved faster convergence to the true transition matrix \( P \) compared to linear \( n = 700 \), supporting the proposed framework for noisy financial data.
