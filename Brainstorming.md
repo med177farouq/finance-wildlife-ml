@@ -34,7 +34,7 @@ Let’s start with a focused brainstorming session to explore your concept more 
     Balance: Start with a practical prototype (e.g., Tesla stock prediction), then generalize for academia.
   
 
-## Brainstorming - March 29, 2025
+# Brainstorming - March 29, 2025
 - **Core Concept**: Frame financial signals as "wildlife behaviors":
   - Roaring: Sharp price spikes + high sentiment.
   - Purring: Stable prices + neutral news.
@@ -43,20 +43,36 @@ Let’s start with a focused brainstorming session to explore your concept more 
 - **Image Representation**: Stacked layers (candlestick + sentiment + news heatmap).
 - **Prediction Target**: Price direction (Up/Down), future: risk (High/Low).
 - **Goals**: Practical tool for Tesla; academic method for multi-modal image fusion.
-  
+
 ## Brainstorming Updates - April 6, 2025
 - **Transition Intervals (from PDF)**: Focus on 1%-3% volatility movements as "spikes."
 - **Spike Types (from PDF)**: Temporary (reverts in 1-2 days) vs. Permanent (sustains ≥5 days).
 - **News Filtering (@farouq)**: Split news into Insider Factors (fundamental: earnings, production) vs. Outsider Factors (sentimental: shocks, economic factors).
+- **News Filtering Overlap (@farouq)**:
+  - Challenge: News headlines may contain both Insider (e.g., "earnings") and Outsider (e.g., "recession") factors.
+  - Approach 1: Allow keywords to contribute to both Insider and Outsider sub-layers of the news heatmap.
+  - Approach 2: Assign weights to keywords (e.g., "recession" weight 0.7, "earnings" weight 0.3) based on impact, to be explored during model development.
 - **Classification, Detection, Tracking (@farouq)**:
   - Classification: Up/Down (maps to Buy/Sell).
   - Detection: 1%-3% volatility spikes.
   - Tracking: Avoid double counting with non-overlapping 5-day windows.
 - **Volatility Indices (@farouq)**: Consider VIX/fear index for future iterations to contextualize spikes.
-  
-## Brainstorming Updates - April 6, 2025 (Continued)
-- **News Filtering Overlap (@farouq)**:
-  - Challenge: News headlines may contain both Insider (e.g., "earnings") and Outsider (e.g., "recession") factors.
-  - Approach 1: Allow keywords to contribute to both Insider and Outsider sub-layers of the news heatmap.
-  - Approach 2: Assign weights to keywords (e.g., "recession" weight 0.7, "earnings" weight 0.3) based on impact, to be explored during model development.
-   
+- **Generalizability (@farouq)**: Tesla is a test dataset; model is designed to suit any stock.
+
+## Brainstorming Updates - April 8, 2025
+- **Markov Chains Framework (@farouq)**:
+  - Use Markov Chains to model transitions between states (Roaring, Purring, Hissing).
+  - Current state: Live news and sentiment; combine with historical data (prices, news) but filter less important features to avoid overcomplicating the dataset.
+  - Check irreducibility: Ensure all state transitions are possible (may require adjusting state definitions or dataset).
+  - Use multi-step transitions to predict spike type (Temporary vs. Permanent).
+  - Compute mean return times to estimate time to return to specific states (e.g., Purring after Roaring).
+  - Estimate transition probabilities from historical data.
+- **Exponential Convergence (@farouq)**:
+  - Propose an exponential convergence framework (\( P^{\exp(n)} \)) for empirical transition matrix recovery in noisy Markovian systems (e.g., financial markets).
+  - Faster convergence than linear \( n \)-step transitions, better suited for noisy data with rare transitions.
+- **Pipeline (@farouq)**:
+  - 1. Raw historical data → cleaned using CNN.
+  - 2. CNN extracts latent features or behavioral signals.
+  - 3. Signals translated into states or state probabilities.
+  - 4. Markov Chain models the transition dynamics.
+  - 5. Used for: Predictive modeling, risk assessment, simulation/backtesting.
