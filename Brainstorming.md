@@ -13,6 +13,17 @@ Let’s start with a focused brainstorming session to explore your concept more 
     Wildcards: Insider trades, weather data (for commodity stocks), or even audio from CEO speeches (like .wav files!).
     Mixing It: How do we combine these visually? Stack them (e.g., RGB channels)? Overlay them? Create a “financial spectrogram”?
 
+   ## Brainstorming Updates - April 11, 2025 (Consolidated)
+- **Mega-Image as a Financial Glyphboard (@farouq)**:
+  - Refined Mega-Image to align with the original "Key Components" and updates.
+  - Conceptual Layers:
+    - Fixed Layer (Fundamentals): Bottom (rows 341-512), e.g., blue = valuation, green = earnings.
+    - Active Layer (Price, News, Sentiment): Middle (rows 171-340), e.g., green/red = price, yellow/orange = sentiment.
+    - Rare Events (Shocks, Rates, Global Forces): Top (rows 0-170), e.g., purple = inflation, white = M&A.
+  - Visual Format: 512×512 grid of 2×2 pixel blocks, abstract and machine-readable (inspired by the attached image’s pixelated style).
+  - Workflow: Build image → Slice into patches → Embed patches → Model with ViT → Predict movement/path/risk.
+  - Additional Features: Dynamic volatility thresholds, sentiment decay (\( e^{-\lambda t} \)), news clustering (K-means).
+
 4. Prediction Targets
 
     Price: Up/Down, percentage change.
