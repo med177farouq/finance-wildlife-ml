@@ -80,3 +80,21 @@ Let’s start with a focused brainstorming session to explore your concept more 
 - **Exponential Convergence Validation (@farouq)**:
   - Tested exponential \( n \) (e.g., \( n = \exp(9) \approx 8103 \)) in a weather Markov Chain example (Cloudy, Rainy, Sunny), analogous to our states (Roaring, Purring, Hissing).
   - Exponential \( n \) achieved faster convergence to the true transition matrix \( P \) compared to linear \( n = 700 \), supporting the proposed framework for noisy financial data.
+
+## Brainstorming Updates - April 11, 2025
+- **Mega-Image Layout (@farouq)**:
+  - Canvas: 512×512 pixels, modular grid zones.
+  - Background Layer: Fundamentals (market cap, valuation, sector).
+  - Foreground Activity: Price (direction, volume, volatility), sentiment (intensity, news sentiment).
+  - Sky & Environment: Macro shocks (inflation, Fed policy, M&A).
+  - Top Banner Strip: Index/options signals (S&P 500, VIX, Put/Call Ratio).
+  - Abstract, machine-readable format (color = meaning, position = structure).
+- **Embedding Methods (@farouq)**:
+  - News/Sentiment: FinBERT embeddings.
+  - Time Series (Prices): TS2Vec embeddings.
+  - Fundamentals: Dense MLP embeddings.
+  - Map embeddings to Mega-Image using color/position rules.
+- **Project Framing (@farouq)**:
+  - Title: "Mega Image Model (Lion’s Voice): A Unified Visual Representation of Financial Market States for Predictive Learning."
+  - Concept: Encode financial data into a machine-readable Mega-Image for deep market analysis and forecasting.
+  - Workflow: Build image → Slice into patches → Embed patches → Model with ViT for predictions.
