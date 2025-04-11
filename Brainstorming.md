@@ -13,6 +13,14 @@ Let’s start with a focused brainstorming session to explore your concept more 
     Wildcards: Insider trades, weather data (for commodity stocks), or even audio from CEO speeches (like .wav files!).
     Mixing It: How do we combine these visually? Stack them (e.g., RGB channels)? Overlay them? Create a “financial spectrogram”?
 
+## Brainstorming Updates - April 11, 2025 (Clarified Modeling Approach)
+- **Mega-Image Creation (@farouq)**:
+  - Integrates all sources (price, news, sentiment, fundamentals, macro) into a 512×512 grid of 2×2 blocks.
+  - Preprocessed with embeddings (FinBERT, TS2Vec, dense embeddings), sentiment decayed (\( e^{-\lambda t} \)), news clustered (K-means).
+- **Modeling Approach (@farouq)**:
+  - Original plan: Use a CNN to process the Mega-Image, extract features, and output state probabilities.
+  - ViT discussed as an option, with advanced techniques (e.g., hybrid CNN-ViT, multi-modal transformers) for future exploration.
+
    ## Brainstorming Updates - April 11, 2025 (Consolidated)
 - **Mega-Image as a Financial Glyphboard (@farouq)**:
   - Refined Mega-Image to align with the original "Key Components" and updates.
