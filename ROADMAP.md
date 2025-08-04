@@ -23,7 +23,7 @@
 - **Macro Economics**: 21+ indicators (VIX, SPY, Treasury yields, FRED data)
 - **Fundamental Data**: Tesla financials, quarterly earnings, competitive analysis
 - **OpenBB Integration**: Institutional-grade economic calendar, sector rotation
-- **Files**: `tesla_comprehensive_*.csv`, `tesla_mega_dataset_auto_*.csv`, `openbb_tesla_competitive_analysis_*.csv`
+- **Files**: `tesla_comprehensive_*.csv`, `tesla_mega_dataset_enhanced_20250730_205109.csv`, `openbb_tesla_competitive_analysis_*.csv`
 
 ### Data Infrastructure ✅
 - **Mega-Dataset**: Unified timeseries with 200+ features
@@ -41,9 +41,10 @@
 - **Processing**: FinBERT sentiment analysis, systematic historical intervals
 - **Coverage**: 2010-2025 unbiased temporal analysis
 
-**2. `tesla_mega_dataset_auto_20250728_014053.csv`** 
-- **Type**: ML-ready unified timeseries (Both Pillars)
+**2. `tesla_mega_dataset_enhanced_20250730_205109.csv`** 
+- **Type**: Enhanced ML-ready unified timeseries (Both Pillars)
 - **Content**: 200+ features time-aligned (macro, technical, fundamental, sentiment)
+- **Enhancement**: Improved feature engineering and data quality optimization
 - **Structure**: Daily records with comprehensive market context  
 - **Quality**: >95% data completeness, institutional-grade indicators
 - **Features**: Technical (55+), Macro (21+), Fundamental, Sentiment integration
@@ -261,22 +262,31 @@ import seaborn as sns
 4. ✅ **Visualization Pipeline**: Prediction overlay system operational
 
 ### 🚀 Week 4-5 Priority Tasks (ACCELERATED):
-1. **Scale Image Production**: Batch process `tesla_mega_dataset_auto_*.csv` → multiple Mega-Images
+1. **Scale Image Production**: Batch process `tesla_mega_dataset_enhanced_20250730_205109.csv` → multiple Mega-Images
 2. **Generate Training Labels**: Create Buy/Hold/Sell signals from Tesla price movements
 3. **Implement Batch Pipeline**: Automate CSV data → Mega-Image → Patch dataset workflow
 4. **Prepare CNN Training Data**: Split patches with labels for supervised learning
 
+### 📋 **CSV Dataset Documentation**: 
+**Reference**: Complete explanatory guide available for all Stage 1 outputs
+- **270 Features**: Enhanced dataset with comprehensive market context
+- **3 Core Datasets**: Sentiment, enhanced market data, competitive analysis
+- **Model Attribution**: Detailed pixel mapping strategy for Mega-Image construction
+
 ### 🎯 IMMEDIATE TECHNICAL PRIORITIES:
 ```python
-# NEXT: Scale your working prototype
-def batch_create_mega_images(mega_dataset_csv, output_dir):
-    """Scale single image creation to full dataset"""
+# NEXT: Scale your working prototype with enhanced dataset (270 features)
+def batch_create_mega_images(enhanced_dataset_csv, output_dir):
+    """Scale single image creation to full 733-day timeline dataset"""
     
 def generate_price_labels(price_series, buy_threshold=0.02, sell_threshold=-0.02):
     """Create Buy/Hold/Sell labels from Tesla price movements"""
     
 def create_cnn_training_dataset(image_patches, labels, test_split=0.2):
-    """Prepare balanced dataset for CNN training"""
+    """Prepare balanced dataset for CNN training from 270-feature enhanced data"""
+    
+def map_features_to_pixels(macro_features, price_sentiment, fundamentals):
+    """Map 270 features to structured 512x512 image sections"""
 ```
 
 ### 🏆 COMPETITIVE ADVANTAGE ACHIEVED:
@@ -300,9 +310,7 @@ def create_cnn_training_dataset(image_patches, labels, test_split=0.2):
 2. **Patch Processing**: `continue Slicing image.py` - CNN-ready tensors
 3. **Result Visualization**: `Initial Image Draw.py` - Interpretable predictions
 4. **Data Foundation**: 3 comprehensive CSV datasets with 200+ features
-
-**Status**: Your FinNeX framework is **remarkably complete** - ready for immediate CNN model development and academic contribution! 🎉
+ ready for immediate CNN model development and academic contribution!
 
 ---
 
-*This roadmap serves as the definitive guide for completing the FinNeX MSc project, ensuring systematic progress toward successful academic contribution in multimodal financial ML.*
