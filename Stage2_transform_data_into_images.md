@@ -279,5 +279,84 @@ This implementation is based on academic research in financial time series corre
 - Implement hybrid CNN-Transformer architecture
 
 ---
+## **🎨 "25+ Regime-Aware Colors" Definition**
+
+**"Regime-aware colors"** means each color is specifically chosen to represent a particular **financial market condition or behavior**, rather than arbitrary color assignment.
+
+### **Why 25+ Colors vs Traditional Approaches?**
+- **Traditional**: 3-5 basic colors (red=down, green=up, neutral=gray)
+- **FinNeX Enhanced**: 25 distinct colors, each with specific financial meaning
+- **Benefit**: Massive increase in visual information density for CNN pattern recognition
+
+---
+
+## **🎯 Complete Color Palette (25 Colors)**
+
+### **📊 Basic Sentiment Colors (7)**
+| **Color** | **RGB Values** | **Financial Meaning** |
+|-----------|----------------|----------------------|
+| `very_bullish` | [0.0, 1.0, 0.2] | **Bright Green** - Extremely positive sentiment |
+| `bullish` | [0.0, 0.8, 0.2] | **Green** - Positive market sentiment |
+| `neutral_high` | [0.6, 0.6, 0.6] | **Light Gray** - Slightly positive neutral |
+| `neutral` | [0.5, 0.5, 0.5] | **Gray** - True neutral sentiment |
+| `neutral_low` | [0.4, 0.4, 0.4] | **Dark Gray** - Slightly negative neutral |
+| `bearish` | [0.8, 0.2, 0.0] | **Red** - Negative market sentiment |
+| `very_bearish` | [1.0, 0.0, 0.0] | **Bright Red** - Extremely negative sentiment |
+
+### **🏛️ Market Regime Colors (4)**
+| **Color** | **RGB Values** | **Financial Meaning** |
+|-----------|----------------|----------------------|
+| `bull_regime` | [0.0, 0.9, 0.3] | **Bull Market Green** - Sustained uptrend |
+| `bear_regime` | [0.9, 0.1, 0.1] | **Bear Market Red** - Sustained downtrend |
+| `high_vol_regime` | [1.0, 0.5, 0.0] | **Orange** - High volatility period |
+| `normal_regime` | [0.3, 0.7, 0.9] | **Blue** - Normal market conditions |
+
+### **📈 Delta Channel Colors (4)**
+| **Color** | **RGB Values** | **Financial Meaning** |
+|-----------|----------------|----------------------|
+| `strong_positive_delta` | [0.0, 1.0, 0.5] | **Cyan-Green** - Large positive price changes |
+| `positive_delta` | [0.0, 0.8, 0.3] | **Green** - Moderate positive changes |
+| `negative_delta` | [0.8, 0.3, 0.0] | **Orange-Red** - Moderate negative changes |
+| `strong_negative_delta` | [1.0, 0.0, 0.3] | **Pink-Red** - Large negative price changes |
+
+### **🚨 Anomaly & Transition Colors (3)**
+| **Color** | **RGB Values** | **Financial Meaning** |
+|-----------|----------------|----------------------|
+| `anomaly_high` | [1.0, 0.0, 1.0] | **Magenta** - High anomaly detected |
+| `anomaly_medium` | [0.8, 0.2, 0.8] | **Purple** - Medium anomaly detected |
+| `transition` | [1.0, 1.0, 0.0] | **Yellow** - Market regime transition |
+
+### **🏢 Macro & Institutional Colors (7)**
+| **Color** | **RGB Values** | **Financial Meaning** |
+|-----------|----------------|----------------------|
+| `macro_stress_high` | [0.8, 0.0, 0.8] | **Bright Purple** - High macro stress (VIX spike) |
+| `macro_stress_low` | [0.4, 0.0, 0.6] | **Dark Purple** - Low macro stress |
+| `institutional` | [0.0, 0.4, 0.8] | **Blue** - Institutional money flow |
+| `growth` | [0.0, 0.6, 0.8] | **Cyan** - Growth stock preference |
+| `value` | [0.8, 0.6, 0.0] | **Gold** - Value stock strength |
+| `volatility_high` | [1.0, 0.5, 0.0] | **Orange** - High volatility indicator |
+| `volatility_low` | [0.2, 0.8, 0.4] | **Light Green** - Low volatility period |
+
+---
+
+## **🎯 How Colors Are Applied**
+
+### **Mega-Image Sections:**
+- **Top (Macro)**: `macro_stress_high/low`, `institutional`, `normal_regime`
+- **Middle (Behavioral)**: `delta` colors + `anomaly` overlays + `sentiment` colors
+- **Bottom (Fundamental)**: `value`, `growth`, `transition` + anomaly heatmaps
+
+### **Adaptive Selection:**
+```python
+# Example: Regime-aware color selection
+if market_regime > 0.8:  # Bear market detected
+    base_color = bear_regime_color
+elif anomaly_score > 0.8:  # High anomaly
+    base_color = anomaly_high_color
+elif delta_value > 0.6:  # Strong positive change
+    base_color = strong_positive_delta_color
+```
+
+**Result**: Each pixel in a 512×512 Mega-Image carries specific financial meaning through its color, enabling CNNs to learn complex market patterns that traditional 3-5 color approaches would miss.
 
 *Stage 2 successfully transforms correlated financial data into visually diverse, CNN-ready Mega-Images using advanced anti-correlation techniques from academic research.*
